@@ -14,16 +14,21 @@ public class Main {
         lib.addBook(b2);
         lib.addBook(b3);
 
-        Person p1 = new Person(1, 200);
+        Person p1 = new Person(1, 10);
         Person p2 = new Person(2, 3);
         Person p3 = new Person(3, 985109320);
 
 
         lib.lendBook(p1, b1);
+        lib.printLoansForPerson(p1);
+
         lib.lendBook(p2, b2);
+
         lib.lendBook(p3, b3);
+        lib.printLoansForPerson(p3);
 
         lib.returnBook(p1, b1, 5);
+
         lib.returnBook(p3, b3, 30000);
     }
 }
